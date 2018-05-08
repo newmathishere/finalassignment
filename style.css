@@ -1,0 +1,174 @@
+h1{
+font-family: Roboto, sans-serif;
+
+}
+
+h2{
+  font-size: 10pt;
+
+}
+
+h3{
+
+  font-size: 18pt;
+  text-align: center;
+
+
+}
+
+#toptext{
+  max-width: 100%;
+  font-size: 14pt;
+  font-family: Roboto, sans-serif;
+
+}
+
+svg{
+color: none;
+
+
+
+}
+
+#nysd{
+  display: block;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+}
+path{
+border:black;
+
+}
+
+path:hover, circle:hover {
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+
+/*110 percent or more overcapacity*/
+#SD20, #SD24, #SD25, #SD26 {
+  fill: #990000;
+
+    }
+
+/*100 to 110 percent overcapacity*/
+#SD10, #SD11, #SD15, #SD22, #SD28, #SD30, #SD31{
+  fill: #db2b2b;}
+
+/*90 to 100 percent capacity*/
+#SD02, #SD04, #SD06, #SD08, #SD09, #SD12, #SD21, #SD27, #SD29{
+  fill: #ff7777;}
+
+/*80 to 90 percent capacity*/
+#SD01, #SD03, #SD05, #SD07, #SD13, #SD14{
+  fill:#ffb2b2;}
+
+/*less than 80 percent capacity*/
+  #SD17,#SD18,#SD19,#SD23,#SD32,#SD17,#SD23, #SD16{
+    fill:#fceaea;
+  }
+
+#info-box {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
+
+#info-box::first-line {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+  font-size: 16pt;
+  font-weight: 800;
+}
+
+/* basic positioning */
+.legend { list-style: none;
+          font-size:  10pt;
+          margin-left: 23.8%;
+          margin-right:10%;
+          font-family: Roboto, sans-serif;
+
+
+
+
+}
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .plus110 { background-color: #990000; }
+.legend .plus100{ background-color: #db2b2b; }
+.legend .ninetyto100 { background-color: #ff7777; }
+.legend .eightyto90 { background-color: #ffb2b2; }
+.legend .below80 { background-color: #fceaea; }
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+    #nysd{
+      display: block;
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #toptext{
+            margin-left: 10%;
+            margin-right:10%;
+            max-width: 40%;
+    }
+
+    h1,h2{margin-left: 10%;
+    margin-right:10%;
+    max-width: 40%;
+    }
+
+}
+@media(min-width: 729px) {
+        /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+
+        #nysd{
+          display: block;
+          position: static;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 50%;
+          margin-left: 25%;
+          margin-right:10%;
+
+        }
+#toptext{
+        margin-left: 27%;
+        margin-right:10%;
+        max-width: 45%;
+}
+
+h1,h2{margin-left: 27%;
+margin-right:10%;
+max-width: 45%;
+}
+}
