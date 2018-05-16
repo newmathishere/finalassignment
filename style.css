@@ -1,5 +1,5 @@
 h1{
-font-family: Roboto, sans-serif;
+
 
 }
 
@@ -10,16 +10,21 @@ h2{
 
 h3{
 
-  font-size: 18pt;
+  font-size: 16pt;
   text-align: center;
+
+
 
 
 }
 
+
+
 #toptext{
   max-width: 100%;
   font-size: 14pt;
-  font-family: Roboto, sans-serif;
+  font-family: Palanquin, sans-serif;
+  line-height: 1.4em;
 
 }
 
@@ -105,22 +110,91 @@ path:hover, circle:hover {
 /* basic positioning */
 .legend { list-style: none;
           font-size:  10pt;
-          margin-left: 23.8%;
-          margin-right:10%;
+          margin-left: 0 ;
+          margin-right: 0;
           font-family: Roboto, sans-serif;
 
 
 
 
+
 }
-.legend li { float: left; margin-right: 10px; }
-.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+.legend li {  margin-right: 0; }
+.legend span { border: 1px solid #ccc; width: 12px; height: 12px; margin: 2px; }
 /* your colors */
 .legend .plus110 { background-color: #990000; }
 .legend .plus100{ background-color: #db2b2b; }
 .legend .ninetyto100 { background-color: #ff7777; }
 .legend .eightyto90 { background-color: #ffb2b2; }
 .legend .below80 { background-color: #fceaea; }
+
+
+/*110 percent or more overcapacity*/
+#CSD17, #CSD05, #CSD07  {
+  fill: #184418;
+
+    }
+
+/*100 to 110 percent overcapacity*/
+  #CSD15,  #CSD04, #CSD13{
+  fill: #3e753e;}
+
+/*90 to 100 percent capacity*/
+#CSD19,#CSD14, #CSD23, #CSD03,  #CSD30,  #CSD06, #CSD08, #CSD09{
+  fill: #669666;}
+
+/*80 to 90 percent capacity*/
+#CSD22, #CSD32, #CSD02, #CSD10, #CSD11,  #CSD12, #CSD29{
+  fill:#9fc69f;}
+
+/*less than 80 percent capacity*/
+   #CSD20, #CSD24, #CSD01,#CSD25, #CSD26, #CSD27, #CSD28,  #CSD21,  #CSD31{
+    fill:#e6f2e6;
+  }
+
+.legend2{
+  list-style: none;
+            font-size:  10pt;
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+            font-family: Roboto, sans-serif;
+
+
+}
+
+
+.legend2 li { float: left; margin-right: 10px; }
+.legend2 span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend2 .plussixthousand { background-color: #184418; }
+.legend2 .fortyfivehundredtosixthousand{ background-color: #3e753e; }
+.legend2 .threetofortyfivehundred { background-color: #669666; }
+.legend2 .fifteentothreethousand { background-color: #9fc69f; }
+.legend2 .below1500 { background-color: #e6f2e6; }
+
+#container{
+  max-width: 100%;
+  height: 400px;
+
+}
+
+
+#graphsubhead{
+    margin-left: 21%;
+    font-weight: lighter;
+
+
+}
+
+#photo1{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
@@ -138,16 +212,88 @@ path:hover, circle:hover {
     #toptext{
             margin-left: 10%;
             margin-right:10%;
-            max-width: 40%;
+            max-width: 80%;
     }
 
     h1,h2{margin-left: 10%;
     margin-right:10%;
-    max-width: 40%;
+    max-width: 80%;
     }
 
+
+    #container{
+
+      min-width: 310px;
+      height: 800px;
+      max-width: 1000px;
+      margin: 0 auto;
+
+
+
+    }
+
+figcaption{
+    margin-left: 27%;
+
 }
-@media(min-width: 729px) {
+
+    #graphsubhead{
+
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+
+
+    }
+
+
+
+
+    .legend2{
+      list-style: none;
+                font-size:  10pt;
+                margin-left: 23.8%;
+                margin-right:10%;
+                font-family: Roboto, sans-serif;
+
+
+    }
+
+
+    .legend2 li { float: left; margin-right: 10px; }
+    .legend2 span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+    /* your colors */
+    .legend2 .plussixthousand { background-color: #184418; }
+    .legend2 .fortyfivehundredtosixthousand{ background-color: #3e753e; }
+    .legend2 .threetofortyfivehundred { background-color: #669666; }
+    .legend2 .fifteentothreethousand { background-color: #9fc69f; }
+    .legend2 .below1500 { background-color: #e6f2e6; }
+
+
+
+    .legend { list-style: none;
+              font-size:  10pt;
+              margin-left: 23.8%;
+              margin-right:10%;
+              font-family: Roboto, sans-serif;
+
+
+
+
+    }
+    .legend li { float: left; margin-right: 10px; }
+    .legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+    /* your colors */
+    .legend .plus110 { background-color: #990000; }
+    .legend .plus100{ background-color: #db2b2b; }
+    .legend .ninetyto100 { background-color: #ff7777; }
+    .legend .eightyto90 { background-color: #ffb2b2; }
+    .legend .below80 { background-color: #fceaea; }
+
+
+}
+@media(min-width: 829px) {
         /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
 
         #nysd{
@@ -171,4 +317,68 @@ h1,h2{margin-left: 27%;
 margin-right:10%;
 max-width: 45%;
 }
+
+#container{
+  min-width: 310px;
+  height: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+
+
+
+}
+
+
+.legend2{
+  list-style: none;
+            font-size:  10pt;
+            margin-left: 23.8%;
+            margin-right:10%;
+            font-family: Roboto, sans-serif;
+
+
+}
+
+
+.legend2 li { float: left; margin-right: 10px; }
+.legend2 span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend2 .plussixthousand { background-color: #184418; }
+.legend2 .fortyfivehundredtosixthousand{ background-color: #3e753e; }
+.legend2 .threetofortyfivehundred { background-color: #669666; }
+.legend2 .fifteentothreethousand { background-color: #9fc69f; }
+.legend2 .below1500 { background-color: #e6f2e6; }
+
+
+}
+
+.legend { list-style: none;
+          font-size:  10pt;
+          margin-left: 23.8%;
+          margin-right:10%;
+          font-family: Roboto, sans-serif;
+
+
+
+
+}
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend .plus110 { background-color: #990000; }
+.legend .plus100{ background-color: #db2b2b; }
+.legend .ninetyto100 { background-color: #ff7777; }
+.legend .eightyto90 { background-color: #ffb2b2; }
+.legend .below80 { background-color: #fceaea; }
+
+
+#photo1{
+    max-width: 42%;
+    margin-left: 27%;
+    margin-right: auto;
+
+
+}
+
 }
