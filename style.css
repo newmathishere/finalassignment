@@ -155,6 +155,7 @@ path:hover, circle:hover {
 .legend2{
   list-style: none;
             font-size:  10pt;
+            display: block;
             margin-left: 0 auto;
             margin-right: 0 auto;
             font-family: Roboto, sans-serif;
@@ -172,6 +173,65 @@ path:hover, circle:hover {
 .legend2 .fifteentothreethousand { background-color: #9fc69f; }
 .legend2 .below1500 { background-color: #e6f2e6; }
 
+
+
+
+
+/*110 percent or more overcapacity*/
+#PSD20, #PSD25  {
+  fill: #4c1c00;
+
+    }
+
+/*100 to 110 percent overcapacity*/
+  #PSD26,  #PSD28{
+  fill: #823d16;}
+
+/*90 to 100 percent capacity*/
+#PSD11,#PSD15, #PSD21, #PSD30{
+  fill: #a05b35;}
+
+/*80 to 90 percent capacity*/
+#PSD01, #PSD02, #PSD03, #PSD04, #PSD05,  #PSD07, #PSD10, #PSD12, #PSD13, #PSD16, #PSD19, #PSD22, #PSD23, #PSD27, #PSD29, #PSD31{
+  fill:#ba7a57;}
+
+/*less than 80 percent capacity*/
+   #PSD08, #PSD09, #PSD14, #PSD18, #PSD24, #PSD32{
+    fill:#ce9f86;
+  }
+
+
+  /*less than 80 percent capacity*/
+     #PSD06, #PSD17{
+      fill:#ffe8d6;
+    }
+
+
+.legend3{
+  list-style: none;
+            display: block;
+            font-size:  10pt;
+            margin-left: auto;
+            margin-right:  auto;
+            font-family: Roboto, sans-serif;
+
+
+}
+
+
+.legend3 li { margin-right: 10px; float: left;}
+.legend3 span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legend3 .morethan5000 { background-color: #4c1c00; }
+.legend3 .twothousandto4999{ background-color: #823d16; }
+.legend3 .oneto1999 { background-color: #a05b35; }
+.legend3 .decrease1to2000 { background-color: #ba7a57; }
+.legend3 .twothousand1to5000 { background-color: #ce9f86; }
+.legend3 .decreasemorethan5000 { background-color: #ffe8d6; }
+
+
+
+
 #container{
   max-width: 100%;
   height: 400px;
@@ -187,9 +247,9 @@ path:hover, circle:hover {
 }
 
 #photo1{
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 100%;
+
+
 
 
 }
@@ -291,6 +351,16 @@ figcaption{
     .legend .eightyto90 { background-color: #ffb2b2; }
     .legend .below80 { background-color: #fceaea; }
 
+    #photo1{
+        max-width: 1.9%;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
 
 }
 @media(min-width: 829px) {
@@ -374,10 +444,11 @@ max-width: 45%;
 
 
 #photo1{
-    max-width: 42%;
-    margin-left: 27%;
-    margin-right: auto;
+    max-width: 50%;
 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 

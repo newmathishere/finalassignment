@@ -7,7 +7,7 @@ Highcharts.chart('container', {
         zoomType: 'xy'
     },
     title: {
-        text: 'Enrollment and Overcapacity Rate in Overutilized NYC Schools'
+        text: 'Which New York City Schools are Overcrowded?'
     },
     subtitle: {
         text: 'Source: New York City Department of Education'
